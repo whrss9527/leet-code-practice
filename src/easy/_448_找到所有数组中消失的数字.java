@@ -39,6 +39,7 @@ public class _448_找到所有数组中消失的数字 {
          */
         List<Integer> res = new ArrayList();
         int index = 0;
+        //每次都进行对数组长度取模，这样当遇到已经被改变的元素时，进行一个取原值操作
         for (int i = 0; i < nums.length; i++)
         {
             index = (nums[i] - 1) % nums.length;
