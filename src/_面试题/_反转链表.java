@@ -6,7 +6,7 @@ import java.util.HashMap;
  * 反转链表
  */
 
-public class Main {
+public class _反转链表 {
     public ListNode reverse(){
         ListNode node = new ListNode(1);
         ListNode node2 = new ListNode(2);
