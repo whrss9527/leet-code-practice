@@ -39,10 +39,8 @@ public class _526_优美的排列 {
     public int countArrangement(int n) {
         // 先将所有数据适配对应，符合条件的全部放置在二位数组中
         // 如：{1,2,6}
-        //  6/2/1  2/1  /1  1/2  1     1/2/6
-        //     *        2   *    2  *    2
-        //     *        *   *    *  *    6
-        //
+        //  6/2/1  1/2  1/2/6
+        // 从头统计到尾，如果有一个list能统计到尾部，则该返回值+1
         vis = new boolean[n + 1];
         match = new List[n + 1];
         for (int i = 0; i <= n; i++) {
