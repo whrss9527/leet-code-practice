@@ -25,7 +25,8 @@ package easy;
  */
 public class _345_反转字符串中的元音字母 {
     /***
-     * 双指针
+     * 双指针解法：
+     *      前后包夹，符合条件就转换
      * @param s
      * @return
      */
