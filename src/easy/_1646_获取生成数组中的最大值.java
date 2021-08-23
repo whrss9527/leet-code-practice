@@ -61,6 +61,7 @@ public class _1646_获取生成数组中的最大值 {
         nums[0] = 0; nums[1] = 1;
         int max = 0;
         for (int i = 2; i <= n; ++i) {
+            // 判断是基数还是偶数，将结果计算放进去，遍历着往前走，拿到最大值
             int k = nums[i] = (i & 1) == 0 ? nums[i >> 1] : nums[i >> 1] + nums[(i >> 1) + 1];
             if (k > max) max = k;
         }
