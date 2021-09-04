@@ -22,6 +22,7 @@ F(N) = F(N - 1) + F(N - 2), 其中 N > 1.
 输出：5
 
 */
+
 func fib(n int) int {
 	if n < 2 {
 		return n
