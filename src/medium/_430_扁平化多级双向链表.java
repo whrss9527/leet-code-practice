@@ -17,6 +17,7 @@ public class _430_扁平化多级双向链表 {
         Node last = null;
 
         while (cur != null) {
+            // next 不停地向后刷，如果遇到当前节点有子节点时，将该节点记录，等到遍历完子节点后让子节点地尾节点指向该next
             Node next = cur.next;
             //  如果有子节点，那么首先处理子节点
             if (cur.child != null) {
