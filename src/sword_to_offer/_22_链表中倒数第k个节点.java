@@ -36,8 +36,15 @@ public class _22_链表中倒数第k个节点 {
 class ListNode {
     int val;
     ListNode next;
+    ListNode(){
+
+    }
 
     ListNode(int x) {
         val = x;
+    }
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
     }
 }
