@@ -59,7 +59,7 @@ public class _322_零钱兑换 {
         // 双层for 计算出从1块到amount块每一位需要的最少钱币数
         for (int i = 1; i <= amount; i++) {
             for (int j = 0; j < coins.length; j++) {
-                // 判断下一个金币额度是否比要计算的amount小，小
+                // 判断下一个金币额度是否比要计算的amount小，小 才能放进去
                 if (coins[j] <= i) {
                     dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);
                 }
